@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ExampleEF.EF;
+﻿using ExampleEF.EF;
 using Microsoft.EntityFrameworkCore;
 
 namespace ExampleEF.AppEFContext
@@ -15,12 +10,13 @@ namespace ExampleEF.AppEFContext
 
         public AppContext()
         {
+            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = HOME; Initial Catalog = testing; Persist Security Info=True;User ID = user; Password=Rfgecnf!;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Data Source = HOME; Initial Catalog = library; Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
 }
