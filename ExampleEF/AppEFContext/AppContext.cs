@@ -16,7 +16,7 @@ namespace ExampleEF.AppEFContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = HOME; Initial Catalog = library; Trusted_Connection=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Data Source = HOME; Initial Catalog = libraryDB; Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
 }

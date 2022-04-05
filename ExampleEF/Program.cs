@@ -1,5 +1,6 @@
 ﻿using System;
 using ExampleEF.EF;
+using ExampleEF.Repositories;
 
 namespace ExampleEF
 {
