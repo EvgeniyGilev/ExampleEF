@@ -14,11 +14,11 @@ namespace ExampleEF.Repositories
         /// </summary>
         /// <param name="bookName">The book name.</param>
         /// <param name="releaseDate">The release date.</param>
-        public void AddBook(string bookName, DateTime releaseDate)
+        public void AddBook(string bookName, int releaseYear)
         {
             using (var db = new AppContext())
             {
-                db.Books.Add( new Book() { Name = bookName, ReleaseDate = releaseDate });
+                db.Books.Add( new Book() { Name = bookName, ReleaseYear = releaseYear });
                 db.SaveChanges();
             }
         }
@@ -93,7 +93,7 @@ namespace ExampleEF.Repositories
         /// </summary>
         /// <param name="id">The id.</param>
         /// <param name="updateYear">The update year.</param>
-        public void UpdateBookReleaseDateById(int id, DateTime releaseDate)
+        public void UpdateBookReleaseDateById(int id, int releaseYear)
         {
             using (var db = new AppContext())
             {
@@ -101,7 +101,7 @@ namespace ExampleEF.Repositories
 
                 if (bookToUpdate != null)
                 {
-                    bookToUpdate.ReleaseDate = releaseDate;
+                    bookToUpdate.ReleaseYear = releaseYear;
                 }
                 db.SaveChanges();
             }
