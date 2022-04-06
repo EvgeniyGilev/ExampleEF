@@ -22,7 +22,6 @@ namespace ExampleEF.Repositories
         }
 
         /// <summary>
-        /// вывести всех пользователей в список
         /// </summary>
         /// <returns>A list of Users.</returns>
         public List<User> SelectAllUsers()
