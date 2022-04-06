@@ -83,8 +83,8 @@ namespace ExampleEF.Repositories
                 if (bookToUpdate != null)
                 {
                     bookToUpdate.Name = bookName;
+                    db.SaveChanges();
                 }
-                db.SaveChanges();
             }
         }
 
@@ -102,8 +102,9 @@ namespace ExampleEF.Repositories
                 if (bookToUpdate != null)
                 {
                     bookToUpdate.ReleaseYear = releaseYear;
+                    db.SaveChanges();
                 }
-                db.SaveChanges();
+                
             }
         }
     }

@@ -7,16 +7,13 @@ using System.Threading.Tasks;
 namespace ExampleEF.EF
 {
     /// <summary>
-    /// Пользователь
+    /// Тема книги
     /// </summary>
-    public class User
+    public class Theme
     {
         public int Id { get; set; }
-
-        //имя читателя
-        public string Name { get; set; }
-
-        //электронный адрес
-        public string Email { get; set; }
+        
+        //название темы книги
+        public string ThemeName { get; set; }
     }
 }

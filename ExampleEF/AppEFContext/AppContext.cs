@@ -11,6 +11,12 @@ namespace ExampleEF.AppEFContext
         // Объекты таблицы Books
         public DbSet<Book> Books { get; set; }
 
+        //Объекты таблицы Authors
+        public DbSet<Author> Authors { get; set; }
+
+        //Объекты таблицы Themes
+        public DbSet<Theme> Themes{ get; set; }
+
         public AppContext()
         {
             //Database.EnsureDeleted();
