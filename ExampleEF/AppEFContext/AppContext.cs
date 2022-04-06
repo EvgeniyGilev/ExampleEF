@@ -8,9 +8,12 @@ namespace ExampleEF.AppEFContext
         // Объекты таблицы Users
         public DbSet<User> Users { get; set; }
 
+        // Объекты таблицы Books
+        public DbSet<Book> Books { get; set; }
+
         public AppContext()
         {
-            Database.EnsureDeleted();
+            //Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 

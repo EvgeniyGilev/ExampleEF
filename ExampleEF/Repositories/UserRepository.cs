@@ -72,7 +72,7 @@ namespace ExampleEF.Repositories
         /// </summary>
         /// <param name="id">The id.</param>
         /// <param name="newName">The new name.</param>
-        public void DeleteUserById(int id, string newName)
+        public void DeleteUserById(int id)
         {
             using (var db = new AppContext())
             {
