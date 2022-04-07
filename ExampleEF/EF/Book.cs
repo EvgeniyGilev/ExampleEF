@@ -12,7 +12,7 @@ namespace ExampleEF.EF
     public class Book
     {
         public int Id { get; set; }
-        
+
         //название книги
         public string Name { get; set; }
 

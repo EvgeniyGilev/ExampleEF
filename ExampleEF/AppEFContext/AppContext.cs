@@ -15,7 +15,7 @@ namespace ExampleEF.AppEFContext
         public DbSet<Author> Authors { get; set; }
 
         //Объекты таблицы Themes
-        public DbSet<Theme> Themes{ get; set; }
+        public DbSet<Theme> Themes { get; set; }
 
         public AppContext()
         {

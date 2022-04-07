@@ -62,7 +62,7 @@ namespace ExampleEF.Repositories
                     userToUpdate.Name = newName;
                     db.SaveChanges();
                 }
-                
+
             }
         }
 
@@ -81,7 +81,7 @@ namespace ExampleEF.Repositories
                     db.Users.Remove(userForDelete);
                     db.SaveChanges();
                 }
-                
+
             }
         }
     }
