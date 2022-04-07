@@ -15,5 +15,8 @@ namespace ExampleEF.EF
         
         //название темы книги
         public string ThemeName { get; set; }
+
+        //Тема может быть у нескольких книг, задаем связь
+        public List<Book> Books { get; set; } = new List<Book>();
     }
 }

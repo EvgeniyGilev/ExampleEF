@@ -66,11 +66,11 @@ namespace ExampleEF.Repositories
             }
         }
 
+
         /// <summary>
         /// Удаляем пользователя
         /// </summary>
         /// <param name="id">The id.</param>
-        /// <param name="newName">The new name.</param>
         public void DeleteUserById(int id)
         {
             using (var db = new AppContext())

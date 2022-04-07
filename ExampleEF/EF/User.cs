@@ -18,5 +18,8 @@ namespace ExampleEF.EF
 
         //электронный адрес
         public string Email { get; set; }
+
+        //У читателя может быть у нескольких книг на руках, задаем связь
+        public List<Book> Books { get; set; } = new List<Book>();
     }
 }

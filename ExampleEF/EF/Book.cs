@@ -19,14 +19,20 @@ namespace ExampleEF.EF
         //год выхода
         public int ReleaseYear { get; set; }
 
-        //пользователь у кого книга на руках
+        //внешний ключ на User
+        //public int UserId { get; set; }
+
         public User User { get; set; }
 
-        //авторы книги
+        //внешний ключ на Author
+        //public int AuthorId { get; set; }
+
         public Author Author { get; set; }
 
-        //тема книги
+        //внешний ключ на Theme
+        //public int ThemeId { get; set; }
+
         public Theme Theme { get; set; }
     }
 }
-}
+

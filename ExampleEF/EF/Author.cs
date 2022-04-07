@@ -13,5 +13,8 @@ namespace ExampleEF.EF
         //автор книги
         public string Name { get; set; }
 
+        //автор может быть у нескольких книг, задаем связь
+        public List<Book> Books { get; set; } = new List<Book>();
+
     }
 }
